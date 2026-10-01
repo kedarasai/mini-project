@@ -1,0 +1,24 @@
+import React, { useState } from "react";
+
+function ButtonClickExample() {
+  const [count, setCount] = useState(0);
+
+  // Event handler function
+  const handleClick = () => {
+    setCount(count + 1);
+    alert("Button clicked!");
+  };
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h2>React Button Click Event Example</h2>
+      <p>Button clicked {count} times.</p>
+
+      <button onClick={handleClick}>
+        Click Me
+      </button>
+    </div>
+  );
+}
+
+export default ButtonClickExample;
